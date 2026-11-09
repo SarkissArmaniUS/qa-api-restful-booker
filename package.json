@@ -1,0 +1,19 @@
+{
+  "name": "qa-api-restful-booker",
+  "version": "1.0.0",
+  "description": "API test automation for restful-booker (Playwright + TypeScript + Zod)",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "postman": "npx --yes newman run postman/restful-booker.postman_collection.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
